@@ -107,7 +107,7 @@ public class VistaController {
 		return "/registrarse";
 	}
 
-	@PostMapping({"includes/registroUser"})
+	@PostMapping({"../includes/registroUser"})
 	public String registroUser(Model model,
 			@RequestParam(name= "nombre") String nombre,
 			@RequestParam(name= "apellido") String apellido,
@@ -119,7 +119,7 @@ public class VistaController {
 		model.addAttribute("correo", correo);
 		model.addAttribute("telefono", telefono);
 		model.addAttribute("password", password);
-		return "includes/registroUser";
+		return "../includes/registroUser";
 	}
 
 }

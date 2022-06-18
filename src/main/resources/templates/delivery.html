@@ -10,6 +10,14 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
 		integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 	<link rel="stylesheet" th:href="@{/css/styles.css}">
+	<style>
+		body {
+			background-attachment: fixed;
+			background-position: center center;
+			background-size: cover;
+			background-image: url(https://res.cloudinary.com/dbuhnmtty/image/upload/v1620241746/Dise%C3%B1o_sin_t%C3%ADtulo_haxsad.png);
+		}
+	</style>
 	<!-- CSS -->
 </head>
 
@@ -19,31 +27,8 @@
 	<!-- NavBar End -->
 
 	<div class="container">
-
-		<table class="table">
-			<thead>
-				<tr>
-					<th scope="col">#</th>
-					<th scope="col">Nombre</th>
-					<th scope="col">Apellidos</th>
-					<th scope="col">Correo Electronico</th>
-					<th scope="col">Telefono</th>
-					<th scope="col">Password</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr th:each="usuario:${usuarios}">
-					<td th:text=${usuario.id}></td>
-					<td th:text=${usuario.nombre}></td>
-					<td th:text=${usuario.apellidos}></td>
-					<td th:text=${usuario.correo}></td>
-					<td th:text=${usuario.telefono}></td>
-					<td th:text=${usuario.password}></td>
-				</tr>
-			</tbody>
-		</table>
-
-		
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br>
 	</div>
 
 	<!-- Footer -->
