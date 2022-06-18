@@ -1,0 +1,117 @@
+<!--Carousel Wrapper-->
+<div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel"
+	th:fragment="carruselVendidos">
+
+	<!--Slides-->
+	<div class="carousel-inner" role="listbox">
+
+		<!--First slide-->
+		<div class="carousel-item active">
+
+			<div class="row">
+				<div class="col-md-4">
+					<div class="card mb-2 active">
+						<a th:href="@{coleccion/tortasProductos/torta-frambuesa}" class="card-img-top">
+							<img class="card-img-top"
+								src="https://res.cloudinary.com/dbuhnmtty/image/upload/v1621202483/Frambuesa_345ab572-0e2c-4140-9a2f-8f7dda36d360_2000x_jdmptb.jpg">
+						</a>
+						<div class="card-body">
+							<h5 class="card-title">TORTA DE FRAMBUESA</h5>
+							<p class="card-text-money">desde $1</p>
+							<p class="card-text"><small class="text-muted">Para 10, 15 y 20 personas.</small></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 clearfix d-none d-md-block">
+					<div class="card mb-2">
+						<a th:href="@{coleccion/kuchenesProductos/kuchen-cheesecake}" class="card-img-top">
+							<img class="card-img-top"
+								src="https://res.cloudinary.com/dbuhnmtty/image/upload/v1621217518/Cheesecake_2000x_mwqmug.jpg">
+						</a>
+						<div class="card-body">
+							<h5 class="card-title">CHEESECAKE</h5>
+							<p class="card-text-money">desde $1</p>
+							<p class="card-text"><small class="text-muted">Para 6 y 10 personas.</small></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 clearfix d-none d-md-block">
+					<div class="card mb-2">
+						<a th:href="@{coleccion/kuchenesProductos/kuchen-pie-de-limon}" class="card-img-top">
+							<img class="card-img-top"
+								src="https://res.cloudinary.com/dbuhnmtty/image/upload/v1621202472/PieLimon_2000x_oqrhdf.webp">
+						</a>
+						<div class="card-body">
+							<h5 class="card-title" href="#">PIE DE LIMÓN</h5>
+							<p class="card-text-money">desde $1</p>
+							<p class="card-text"><small class="text-muted">Para 6 y 10 personas.</small></p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!--/.First slide-->
+		
+		<!--Second slide-->
+		<div class="carousel-item">
+
+			<div class="row">
+				<div class="col-md-4">
+					<div class="card mb-2 active">
+						<a th:href="@{coleccion/tortasProductos/torta-frambuesa}" class="card-img-top">
+							<img class="card-img-top"
+								src="https://res.cloudinary.com/dbuhnmtty/image/upload/v1621202483/Frambuesa_345ab572-0e2c-4140-9a2f-8f7dda36d360_2000x_jdmptb.jpg">
+						</a>
+						<div class="card-body">
+							<h5 class="card-title">TORTA DE FRAMBUESA</h5>
+							<p class="card-text-money">desde $1</p>
+							<p class="card-text"><small class="text-muted">Para 10, 15 y 20 personas.</small></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 clearfix d-none d-md-block">
+					<div class="card mb-2">
+						<a th:href="@{coleccion/kuchenesProductos/kuchen-cheesecake}" class="card-img-top">
+							<img class="card-img-top"
+								src="https://res.cloudinary.com/dbuhnmtty/image/upload/v1621217518/Cheesecake_2000x_mwqmug.jpg">
+						</a>
+						<div class="card-body">
+							<h5 class="card-title">CHEESECAKE</h5>
+							<p class="card-text-money">desde $1</p>
+							<p class="card-text"><small class="text-muted">Para 6 y 10 personas.</small></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 clearfix d-none d-md-block">
+					<div class="card mb-2">
+						<a th:href="@{coleccion/kuchenesProductos/kuchen-pie-de-limon}" class="card-img-top">
+							<img class="card-img-top"
+								src="https://res.cloudinary.com/dbuhnmtty/image/upload/v1621202472/PieLimon_2000x_oqrhdf.webp">
+						</a>
+						<div class="card-body">
+							<h5 class="card-title" href="#">PIE DE LIMÓN</h5>
+							<p class="card-text-money">desde $1</p>
+							<p class="card-text"><small class="text-muted">Para 6 y 10 personas.</small></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/.Second slide-->
+	</div>
+	<!--/.Slides-->
+	<a class="carousel-control-prev" href="#multi-item-example" role="button" data-slide="prev">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		<span class="sr-only">Previous</span>
+	</a>
+	<a class="carousel-control-next" href="#multi-item-example" role="button" data-slide="next">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		<span class="sr-only">Next</span>
+	</a>
+</div>
+<!--/.Carousel Wrapper-->

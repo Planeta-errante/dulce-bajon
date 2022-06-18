@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Tortas - DulceBajón</title>
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+		integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}">
+	<!-- CSS -->
+</head>
+
+<body>
+
+	<!-- NavBar -->
+	<div th:replace="includes/navbar::navbar"></div><br>
+	<!-- NavBar End -->
+
+	<!-- Container -->
+	<div class="container">
+
+		<!-- Acceso Directo -->
+		<nav id="accesoDirecto" aria-label="breadcrumb">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a th:href="@{/index}">INICIO</a></li>
+				<li class="breadcrumb-item"><a th:href="@{/productos}">TODOS LOS PRODUCTOS</a></li>
+				<li class="breadcrumb-item active" aria-current="page">TORTAS</li>
+			</ol>
+		</nav>
+		<!-- End Acceso Directo -->
+
+		<!-- Imagen Principal -->
+		<div class="container-principal">
+			<br>
+			<img src="https://res.cloudinary.com/dbuhnmtty/image/upload/v1621411355/tortas_1_kopci4.png"
+				class="img-fluid">
+		</div>
+		<!-- End Imagen Principal -->
+
+		<br><br>
+
+		<!-- Productos -->
+		<div class="container-listaproductos">
+			<div class="card-deck">
+				<div class="card">
+					<a th:href="@{coleccion/tortasProductos/torta-frambuesa}" class="card-img-top">
+						<img class="card-img-top"
+							src="https://res.cloudinary.com/dbuhnmtty/image/upload/v1621202483/Frambuesa_345ab572-0e2c-4140-9a2f-8f7dda36d360_2000x_jdmptb.jpg">
+					</a>
+					<div class="card-body">
+						<h5 class="card-title">TORTA DE FRAMBUESA</h5>
+						<p class="card-text-money">desde $1</p>
+						<p class="card-text"><small class="text-muted">Para 10, 15 y 20 personas.</small></p>
+					</div>
+				</div>
+				<div class="card">
+					<a th:href="@{coleccion/tortasProductos/torta-lucuma}" class="card-img-top">
+						<img class="card-img-top"
+							src="https://res.cloudinary.com/dbuhnmtty/image/upload/v1621202472/merengue_LUCUMA_2000x_agxi3j.jpg">
+					</a>
+					<div class="card-body">
+						<h5 class="card-title">TORTA DE LÚCUMA</h5>
+						<p class="card-text-money">desde $1</p>
+						<p class="card-text"><small class="text-muted">Para 10, 15 y 20 personas.</small></p>
+					</div>
+				</div>
+				<div class="card">
+					<a th:href="@{coleccion/tortasProductos/torta-manjar-nuez}" class="card-img-top">
+						<img class="card-img-top"
+							src="https://res.cloudinary.com/dbuhnmtty/image/upload/v1621202461/TortaNuez_ac1fce18-dcfa-4ca5-8114-b50f68de5546_2000x_v2oo67.jpg">
+					</a>
+					<div class="card-body">
+						<h5 class="card-title" href="#">TORTA MANJAR NUÉZ</h5>
+						<p class="card-text-money">desde $1</p>
+						<p class="card-text"><small class="text-muted">Para 10, 15 y 20 personas.</small></p>
+					</div>
+				</div>
+				<div class="card">
+					<a th:href="@{coleccion/tortasProductos/torta-mil-hojas}" class="card-img-top">
+						<img class="card-img-top"
+							src="https://res.cloudinary.com/dbuhnmtty/image/upload/v1621202473/MilHojas_2000x_gvetqc.jpg">
+					</a>
+					<div class="card-body">
+						<h5 class="card-title">TORTA MIL HOJAS</h5>
+						<p class="card-text-money">desde $1</p>
+						<p class="card-text"><small class="text-muted">Para 10, 15 y 20 personas.</small></p>
+					</div>
+				</div>
+			</div>
+			<br><br>
+			<div class="card-deck">
+				<div class="card">
+					<a th:href="@{coleccion/tortasProductos/torta-tres-leches}" class="card-img-top">
+						<img class="card-img-top"
+							src="https://res.cloudinary.com/dbuhnmtty/image/upload/v1621202461/TresLeches_2000x_b9uedl.jpg">
+					</a>
+					<div class="card-body">
+						<h5 class="card-title">TORTA TRES LECHES</h5>
+						<p class="card-text-money">desde $1</p>
+						<p class="card-text"><small class="text-muted">Para 10, 15 y 20 personas.</small></p>
+					</div>
+				</div>
+				<div class="card">
+					<a th:href="@{coleccion/tortasProductos/torta-chocolate-guinda}" class="card-img-top">
+						<img class="card-img-top"
+							src="https://res.cloudinary.com/dbuhnmtty/image/upload/v1621216964/Chocolate_guinda_WEB_2000x_hdnxkl.jpg">
+					</a>
+					<div class="card-body">
+						<h5 class="card-title">TORTA CHOCOLATE GUINDA</h5>
+						<p class="card-text-money">desde $1</p>
+						<p class="card-text"><small class="text-muted">Para 10, 15 y 20 personas.</small></p>
+					</div>
+				</div>
+				<div class="card">
+					<a th:href="@{coleccion/tortasProductos/torta-chocolate-nuez}" class="card-img-top">
+						<img class="card-img-top"
+							src="https://res.cloudinary.com/dbuhnmtty/image/upload/v1621216964/Chocolate_nuez_2000x_qjy9qz.jpg">
+					</a>
+					<div class="card-body">
+						<h5 class="card-title" href="#">TORTA CHOCOLATE NUÉZ</h5>
+						<p class="card-text-money">desde $1</p>
+						<p class="card-text"><small class="text-muted">Para 10, 15 y 20 personas.</small></p>
+					</div>
+				</div>
+				<div class="card">
+					<a th:href="@{coleccion/tortasProductos/torta-naranja}" class="card-img-top">
+						<img class="card-img-top"
+							src="https://res.cloudinary.com/dbuhnmtty/image/upload/v1621216964/TortaNaranja_2000x_yfesxa.jpg">
+					</a>
+					<div class="card-body">
+						<h5 class="card-title">TORTA DE NARANJA</h5>
+						<p class="card-text-money">desde $1</p>
+						<p class="card-text"><small class="text-muted">Para 10, 15 y 20 personas.</small></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Productos -->
+	</div>
+	<!-- End Mega Container -->
+
+	<br><br>
+
+	<!-- Footer -->
+	<div th:replace="includes/footer::footer"></div>
+	<!-- End Footer -->
+
+	<!-- JS -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+		crossorigin="anonymous"></script>
+	<!-- JS -->
+</body>
+
+</html>

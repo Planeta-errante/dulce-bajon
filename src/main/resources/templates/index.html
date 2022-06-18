@@ -1,0 +1,89 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>DulceBajón - Tienda Online</title>
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+		integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}">
+	<!-- CSS -->
+</head>
+
+<body>
+
+	<!-- NavBar -->
+	<div th:replace="includes/navbar::navbar"></div><br>
+	<!-- NavBar End -->
+
+	<!-- Mega Container -->
+	<div class="container">
+
+		<!-- Carrusel -->
+		<div th:replace="includes/carrusel::carrusel"></div>
+		<!-- End Carrusel -->
+
+		<br><br>
+
+		<!-- Opciones Productos -->
+		<div class="card-deck">
+			<div class="card">
+				<a th:href="@{/tortas}" class="card-img-top">
+					<img class="card-img-top"
+						src="https://res.cloudinary.com/dbuhnmtty/image/upload/v1621399367/Torta_coleccion.png">
+				</a>
+			</div>
+			<div class="card">
+				<a th:href="@{/kuchenes}" class="card-img-top">
+					<img class="card-img-top"
+						src="https://res.cloudinary.com/dbuhnmtty/image/upload/v1621399715/Kuchen_besmnm.png">
+				</a>
+			</div>
+			<div class="card">
+				<a th:href="@{/otros}" class="card-img-top">
+					<img class="card-img-top"
+						src="https://res.cloudinary.com/dbuhnmtty/image/upload/v1621399211/Otros_1_k4vtkk.png">
+				</a>
+			</div>
+		</div><br>
+		<div class="card-deck">
+			<div class="card">
+				<a th:href="@{/productos}" class="card-img-top">
+					<img class="card-img-top"
+						src="https://res.cloudinary.com/dbuhnmtty/image/upload/v1621324997/Todos_los_productos_jet0em.png">
+				</a>
+			</div>
+		</div>
+		<!-- End Opciones Productos -->
+
+		<!-- Productos más vendidos -->
+		<br><br><br>
+		<div class="container">
+			<h2 class="secondTitle">Productos más vendidos</h2>
+		</div>
+		<br><br>
+		<div th:replace="includes/carruselVendidos::carruselVendidos"></div>
+		<!-- End Productos más vendidos -->
+	</div>
+	<!-- End Mega Container -->
+
+	<br><br>
+
+	<!-- Footer -->
+	<div th:replace="includes/footer::footer"></div>
+	<!-- End Footer -->
+
+	<!-- JS -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+		crossorigin="anonymous"></script>
+	<!-- JS -->
+</body>
+
+</html>

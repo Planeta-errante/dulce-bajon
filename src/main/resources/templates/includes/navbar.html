@@ -1,0 +1,49 @@
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark" th:fragment="navbar">
+	<a class="navbar-brand" th:href="@{/index}"> <b>DulceBajón</b> </a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+		aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" th:href="@{#}" id="navbarScrollingDropdown" role="button"
+					data-toggle="dropdown" aria-expanded="false"> Productos </a>
+					
+				<ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+					<li><a class="dropdown-item" th:href="@{/tortas}">Tortas</a></li>
+					<li><a class="dropdown-item" th:href="@{/kuchenes}">Kuchenes</a></li>
+					<li><a class="dropdown-item" th:href="@{/otros}">Otros</a></li>
+					<li>
+						<hr class="dropdown-divider">
+					</li>
+					<li><a class="dropdown-item" th:href="@{/productos}">Todos los Productos</a></li>
+				</ul>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" th:href="@{/delivery}">Delivery<span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" th:href="@{/sucursales}">Sucursales<span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" th:href="@{/contacto}">Contacto<span class="sr-only">(current)</span></a>
+			</li>
+		</ul>
+		<div class="d-flex flex-row bd-highlight">
+			<div class="p-1 bd-highlight">
+	  			<a th:href="@{/formUser}" class="icon-user">
+					<img class="icon-user"
+					src="https://res.cloudinary.com/dbuhnmtty/image/upload/c_scale,w_39/v1623995543/user.png">
+				</a>
+			</div>
+			<div class="p-3 bd-highlight"></div>
+  			<div class="p-1 bd-highlight">
+  				<a th:href="@{/carrito}" class="icon-shop">
+					<img class="icon-shop" src="https://res.cloudinary.com/dbuhnmtty/image/upload/v1621239801/outline_shopping_cart_white_18dp_jtvt7r.png">
+				</a>
+  			</div>
+		</div>
+	</div>
+</nav>

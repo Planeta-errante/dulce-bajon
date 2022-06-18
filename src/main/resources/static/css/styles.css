@@ -1,0 +1,77 @@
+/*----- Productos ------*/
+
+html {
+  	height: 100%;
+}
+
+footer {
+  	margin-top: auto;
+}
+
+body{
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    background-image: url(https://res.cloudinary.com/dbuhnmtty/image/upload/v1621467448/Dise%C3%B1o_sin_t%C3%ADtulo_2_ukecbe.png);
+}
+
+h5.card-title{
+    align-content: center;
+    text-align: center;
+}
+p.card-text{
+    align-content: center;
+    text-align: center;
+}
+p.card-text-money{
+    text-align: center;
+    color: darkorange;
+}
+nav#accesoDirecto{
+    font-weight: bold;
+}
+.secondTitle{
+	color: black;
+	font-weight: bold;
+	text-align: center;
+}
+.card-deck .card-body{
+    cursor: pointer;
+    transition: transform 0.5s;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+}
+.card-deck .card:hover{
+    transform: translateY(-5px);
+}
+
+/*----- End Productos  -------*/
+
+/*---------Productos individuales----------*/
+
+.img-product{
+    width: 100%;
+}
+.col-md-8{
+    text-align: center;
+}
+h3.card-text-money{
+    color: darkorange;
+}
+.btn-dark{
+    color: darkorange;
+    justify-content: center;
+}
+.btn-light{
+    color: darkorange;
+}
+.btn-toolbar{
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
